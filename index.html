@@ -1,5 +1,14 @@
 Hello
 <script>
-  document.cookie = "url="+window.location.href ;
+  var cookies = document.cookie;
+  var cookies_str = cookies.split(';');
+  
+  var cookie_url = "";
+  
+  cookie_str.forEach(function(element) {
+    document.write(element+"<br>"); 
+  });
+  
+  document.cookie = "url="+window.location.href;
 </script>
 wolrd1
